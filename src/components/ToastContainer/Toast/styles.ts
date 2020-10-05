@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { animated } from 'react-spring'
 
 interface ToastProps {
   type?: 'success' | 'error' | 'info'
@@ -21,7 +22,7 @@ const toastTypeVariations = {
   `
 }
 
-const Container = styled.div<ToastProps>`
+const Container = styled(animated.div)<ToastProps>`
   ${(props) => toastTypeVariations[props.type || 'info']}
 
   border-radius: 10px;
