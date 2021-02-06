@@ -42,6 +42,7 @@
     ],
     "semi": ["error", "never"],
     "no-use-before-define": [0],
+    "camelcase": "off",
     "@typescript-eslint/no-use-before-define": [1],
     "prettier/prettier": "error"
   },
