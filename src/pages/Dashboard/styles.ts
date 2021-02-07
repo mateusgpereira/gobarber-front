@@ -148,6 +148,63 @@ const NextAppointment = styled.div`
   }
 `
 
+const Section = styled.section`
+  margin-top: 48px;
+
+  > strong {
+    border-bottom: 1px solid #3e3b47;
+    color: #999591;
+    display: block;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+`
+
+const Appointment = styled.div`
+  align-items: center;
+  display: flex;
+
+  & + div {
+    margin-top: 16px;
+  }
+
+  span {
+    align-items: center;
+    color: #f4ede8;
+    display: flex;
+    margin-left: auto;
+    margin-right: 16px;
+
+    svg {
+      color: #ff9000;
+      margin-right: 8px;
+    }
+  }
+
+  div {
+    align-items: center;
+    background: #3e3b47;
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    padding: 16px 24px;
+    position: relative;
+
+    img {
+      border-radius: 50%;
+      height: 56px;
+      width: 56px;
+    }
+
+    strong {
+      color: #fff;
+      margin-left: 24px;
+    }
+  }
+`
+
 export {
   Container,
   Header,
@@ -156,5 +213,7 @@ export {
   Content,
   Schedule,
   Calendar,
-  NextAppointment
+  NextAppointment,
+  Section,
+  Appointment
 }
